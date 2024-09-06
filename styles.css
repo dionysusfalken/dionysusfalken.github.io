@@ -1,252 +1,120 @@
-/* General Styles */
-body {
-    font-family: 'Roboto', sans-serif;
+ body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #f4f4f4;
     color: #333;
-    background-color: #f0f0f0;
 }
 
-h1, h2, p {
-    margin: 0 0 15px;
-}
-
-a {
-    text-decoration: none;
-}
-
-/* Buttons */
-button, .btn-primary, .btn-secondary {
-    display: inline-block;
-    padding: 10px 20px;
-    margin: 10px;
-    font-size: 1rem;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.btn-primary {
-    background-color: #004d00;
-}
-
-.btn-primary:hover, .btn-secondary:hover, button:hover {
-    background-color: #003300;
-}
-
-.btn-secondary {
-    background-color: #007300;
-}
-
-/* Age Verification Page (index.html) */
-.age-verification {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    background-color: #004d00;
+header {
+    background-color: #4CAF50;
+    padding: 1rem 0;
     color: white;
     text-align: center;
 }
 
-.age-verification h1 {
-    font-size: 2rem;
-    margin-bottom: 20px;
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
 }
 
-.age-verification button {
-    background-color: #007300;
-    border: none;
-    padding: 15px 30px;
-    margin: 10px;
-    font-size: 1rem;
-    border-radius: 5px;
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
 }
 
-.age-verification button:hover {
-    background-color: #003300;
-}
-
-/* Logo Styling on Age Verification Page */
-.logo {
-    max-width: 150px;
-    margin-bottom: 30px;
-}
-
-#logo-link {
-    display: block;
-    margin-bottom: 30px;
-}
-
-/* Hero Section on Home Page (home.html) */
 .hero {
-    background: url('logo.png') no-repeat center center/cover;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: brown;
+    background-image: url('hero-image.jpg');
+    background-size: cover;
+    background-position: center;
     text-align: center;
+    padding: 5rem 0;
+    color: white;
 }
 
-.hero-content {
-    z-index: 2;
-}
-
-.hero h1 {
+.hero h2 {
     font-size: 3rem;
 }
 
-.hero p {
-    font-size: 1.5rem;
-}
-
-.btn-primary, .btn-secondary {
-    padding: 10px 30px;
-    font-size: 1.2rem;
-}
-
-/* About Us Section on Home Page */
-.about-us {
-    padding: 40px;
-    background-color: #f5f5f5;
-}
-
-.container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-.about-us-photo img {
-    max-width: 100%;
-    height: auto;
-}
-
-.about-us-text {
-    max-width: 500px;
-    margin-left: 20px;
-}
-
-.about-us h2 {
-    color: #004d00;
-    margin-bottom: 20px;
-}
-
-/* Featured Products Section */
-.featured-products {
-    padding: 40px;
-    background-color: #ffffff;
-    text-align: center;
-}
-
-.featured-products h2 {
-    color: #004d00;
-    margin-bottom: 40px;
-}
-
-.carousel {
-    position: relative;
-    overflow: hidden;
-}
-
-.carousel-images {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-}
-
-.carousel-item {
-    min-width: 100%;
-    box-sizing: border-box;
-}
-
-.carousel-prev, .carousel-next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: #004d00;
+.btn {
+    background-color: #333;
     color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    font-weight: bold;
 }
 
-.carousel-prev { left: 10px; }
-.carousel-next { right: 10px; }
-
-/* Testimonials Section */
-.testimonials {
-    padding: 40px;
-    background-color: #f5f5f5;
-    text-align: center;
+section {
+    padding: 2rem 0;
 }
 
-.testimonials h2 {
-    color: #004d00;
-    margin-bottom: 40px;
-}
-
-.testimonial-cards {
+.products-list {
     display: flex;
-    overflow-x: scroll;
-    padding: 20px;
+    justify-content: space-around;
+    gap: 2rem;
 }
 
-.testimonial-card {
-    min-width: 250px;
-    margin: 0 10px;
-    background: #fff;
-    padding: 15px;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.testimonial-card img {
+.product img {
     width: 100%;
-    border-radius: 50%;
-    margin-bottom: 10px;
+    max-width: 200px;
+    height: auto;
+    display: block;
+    margin: 0 auto 1rem auto;
 }
 
-/* Footer */
 footer {
-    background-color: #004d00;
+    background-color: #333;
     color: white;
     text-align: center;
-    padding: 20px;
+    padding: 1rem 0;
 }
 
-footer p {
-    margin: 5px 0;
-}
-
-.footer-map {
-    margin: 20px 0;
-}
-
-.social-media-links a {
-    color: white;
-    margin: 0 10px;
-}
-
-.social-media-links a:hover {
-    color: #007300;
-}
-
-/* Media Queries for Mobile Responsiveness */
+/* MEDIA QUERIES */
 @media (max-width: 768px) {
-    .container {
+    /* Stack nav items vertically for mobile */
+    nav ul {
         flex-direction: column;
-        text-align: center;
+        gap: 1rem;
     }
 
-    .about-us-text {
-        margin-left: 0;
+    /* Adjust hero text size for smaller screens */
+    .hero h2 {
+        font-size: 2rem;
     }
 
-    .carousel-item {
-        min-width: 100%;
+    .btn {
+        padding: 0.5rem 1rem;
+    }
+
+    /* Stack product items vertically on smaller screens */
+    .products-list {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Further text size adjustments for very small screens */
+    .hero h2 {
+        font-size: 1.5rem;
+    }
+
+    /* Make buttons smaller for compact screens */
+    .btn {
+        padding: 0.4rem 0.8rem;
+    }
+
+    /* Adjust padding for smaller devices */
+    section {
+        padding: 1rem 0;
+    }
+
+    footer {
+        font-size: 0.9rem;
     }
 }
