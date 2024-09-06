@@ -1,0 +1,31 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.age-verification-container {
+    background-color: #EAE7DC;
+    width: 100%;
+    height: 100vh;
+}
+
+.age-verification-box {
+    background-color: #8D8741;
+    color: #fff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #EAE7DC;
+}
+
+.btn-success {
+    background-color: #4F6D7A;
+    border: none;
+}
+
+.btn-danger {
+    background-color: #DAA520;
+    border: none;
+}
