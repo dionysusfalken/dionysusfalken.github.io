@@ -1,22 +1,69 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Age Verification</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Age Verification - Mountain High Cannabis</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Age Verification Page Styles */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: url('hero-image.jpg');
+            background-size: cover;
+            background-position: center;
+            margin: 0;
+        }
+
+        .age-verification {
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            border-radius: 10px;
+            width: 300px;
+        }
+
+        .age-verification h2 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .btn {
+            display: block;
+            margin: 1rem auto;
+            padding: 0.75rem 1.5rem;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            font-weight: bold;
+        }
+
+        .btn:hover {
+            background-color: #3e8e41;
+        }
+
+        .no-btn {
+            background-color: #333;
+        }
+
+        .no-btn:hover {
+            background-color: #222;
+        }
+    </style>
 </head>
 <body>
-    <div class="age-verification">
-        <!-- Company Logo with Image Anchor -->
-        <a href="#" id="logo-link">
-            <img src="logo.png" alt="Mountain High Cannabis" class="logo">
-        </a>
 
-        <h1>Are you 21 or older?</h1>
-        <button id="yes-button">Yes</button>
-        <button id="no-button">No</button>
+    <div class="age-verification">
+        <h2>Are You 21 or Older?</h2>
+        <a href="index.html" class="btn">Yes</a>
+        <a href="https://www.google.com" class="btn no-btn">No</a>
     </div>
-    <script src="age-verification.js"></script>
+
 </body>
 </html>
