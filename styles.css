@@ -1,3 +1,4 @@
+/* Age verification styles */
 body, html {
     height: 100%;
     margin: 0;
@@ -29,3 +30,54 @@ h2 {
     background-color: #DAA520;
     border: none;
 }
+
+/* Home Page Styles */
+.hero {
+    background-image: url('shop-front.jpg'); /* Replace with an actual shop image */
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #EAE7DC;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.section {
+    padding: 50px 0;
+}
+
+.products-table {
+    width: 100%;
+    border-spacing: 15px;
+    margin-top: 30px;
+}
+
+.products-table img {
+    width: 100px;
+    height: auto;
+}
+
+.budtenders-section, .shop-image-section {
+    background-color: #8D8741;
+    color: #fff;
+    padding: 50px 0;
+}
+
+.budtenders-section h2, .shop-image-section h2 {
+    color: #EAE7DC;
+}
+
+.budtenders-section img, .shop-image-section img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+} 
